@@ -7,7 +7,7 @@
 :root {
     --primary-colour: #886e52;
     --secondary-colour: #b0c9e1;
-    --accent1-colour: #fcfefe;
+    --accent1-colour: 
     --accent2-colour: #71563d;
     --heading-font: "Cinzel Bold";
     --text-font: "Open Sans Condensed";
@@ -24,6 +24,10 @@ header {
 body {
     font-family: var(--body-font);
     color: var(--accent1-colour);
+}
+
+p{
+    color: #000;
 }
 
 header,
@@ -52,6 +56,10 @@ article {
 
 }
 
+.socialmedia img{
+    width: 50px;
+}
+
 .hero{
     position: relative;
 }
@@ -64,10 +72,10 @@ h1 {
     position: absolute;
     top: 20px;
     padding: 100%;
-    text-align: center;
+    text-align: auto;
     opacity: 0.7;
     background-color: var(--accent1-colour);
-    color: #fff ;
+    color: black;
 
 }
 .hero article img{
