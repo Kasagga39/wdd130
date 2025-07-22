@@ -1,10 +1,10 @@
-:root{
-        --primary-colour: #886e52;
-        --secondary-colour: #b0c9e1;
-        --accent1-colour: #71563d
-        --accent2-colour: #fcfefe;
-        --heading-font: "Cinzel Bold";
-        --text-font: "Open Sans Condensed";
+:root {
+    --primary-colour: #886e52;
+    --secondary-colour: #b0c9e1;
+    --accent1-colour: #71563d;
+    --accent2-colour: #fcfefe;
+    --heading-font: "Cinzel Bold";
+    --text-font: "Open Sans Condensed";
 }
 
 * {
@@ -13,16 +13,13 @@
     box-sizing: border-box;
 }
 
-
-
 header {
     background-color: var(--primary-colour);
     color: var(--accent2-colour);
-
 }
 
 body {
-    font-family: var(--body-font);
+    font-family: var(--text-font);
     color: var(--accent1-colour);
 }
 
@@ -53,7 +50,6 @@ article {
 
 .socialmedia a {
     text-decoration: none;
-
 }
 
 .socialmedia img {
@@ -78,7 +74,6 @@ h1 {
     opacity: 0.7;
     background-color: var(--accent1-colour);
     color: black;
-
 }
 
 .hero article img {
