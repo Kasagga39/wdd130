@@ -16,6 +16,7 @@
 header {
     background-color: var(--primary-colour);
     color: var(--accent2-colour);
+    
 }
 
 body {
@@ -61,7 +62,7 @@ article {
 }
 
 .hero img {
-    display: block;
+    
     width: 100px;
     height: auto;
 }
@@ -69,14 +70,24 @@ article {
 h1 {
     position: absolute;
     top: 20px;
-    padding: 100%;
+    padding: 20%;
     text-align: center;
     opacity: 0.7;
-    background-color: var(--accent1-colour);
-    color: black;
+    height: auto;
+    color: black
 }
 
 .hero article img {
     float: right;
     width: 125px;
+}
+
+
+
+.hero h1{
+    position: relative;
+    left: 50;
+    height: 50;
+    z-index: 2rem;
+    
 }
