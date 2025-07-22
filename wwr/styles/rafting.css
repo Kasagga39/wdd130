@@ -1,10 +1,19 @@
 :root {
-    --primary-colour: #886e52;
-    --secondary-colour: #b0c9e1;
-    --accent1-colour: #71563d;
-    --accent2-colour: #fcfefe;
-    --heading-font: "Cinzel Bold";
-    --text-font: "Open Sans Condensed";
+    --primary-color: #055a05;
+    /* forest green8 */
+    --secondary-color: #f4a261:
+        /* warm sand */
+        --accent1-color: #264653;
+    /* dark slate blue */
+    --accent2-color: #e9c46a;
+    /* light golden yellow */
+    --heading-font: "Merriweather Sans", sans-serif;
+    --body-font: "Lato", sans-serif;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
 }
 
 * {
@@ -13,19 +22,9 @@
     box-sizing: border-box;
 }
 
-header {
-    background-color: var(--primary-colour);
-    color: var(--accent2-colour);
-    
-}
-
 body {
-    font-family: var(--text-font);
-    color: var(--accent1-colour);
-}
-
-p {
-    color: #000;
+    font-family: var(--body-font);
+    color: var(--accent2-color);
 }
 
 header,
@@ -38,7 +37,7 @@ footer {
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: var(--primary-colour);
+    color: var(--primary-color);
 }
 
 nav,
@@ -53,28 +52,25 @@ article {
     text-decoration: none;
 }
 
-.socialmedia img {
-    width: 50px;
-}
-
 .hero {
     position: relative;
 }
 
 .hero img {
-    
-    width: 100px;
+    width: 100%;
     height: auto;
+    display: block;
 }
 
 h1 {
     position: absolute;
     top: 20px;
-    padding: 20%;
+    width: 100%;
+    padding: 16px;
     text-align: center;
     opacity: 0.7;
-    height: auto;
-    color: black
+    background-color: var(--accent2-color);
+    color: #fff;
 }
 
 .hero article img {
@@ -82,12 +78,27 @@ h1 {
     width: 125px;
 }
 
+footer {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    text-align: center;
+    padding: 16px;
 
+}
 
-.hero h1{
-    position: relative;
-    left: 50;
-    height: 50;
-    z-index: 2rem;
-    
+footer nav {
+    display: flex;
+    justify-content: center;
+    size: 21px;
+}
+
+footer nav a {
+    color: var(--accent2-color);
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
 }
