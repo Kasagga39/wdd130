@@ -14,60 +14,128 @@
 header {
     background-color: var(--primary-color);
     color: var(--accent2-color);
+    position: relative;
+}
+
+header nav {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 16px 24px 0 0;
+}
+
+header nav a {
+    color: white;
+    background: #264653;
+    border: 2px solid #e9c46a;
+    border-radius: 6px;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 1.1rem;
+    padding: 6px 18px;
+    font-weight: 600;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+header nav a:hover {
+    background: #264653;
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
 }
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-
 }
 
-body {
-    font-family: var(--body-font);
-    color: var(--accent2-color);
-}
-
-header,
-main,
-footer {
-    width: 840px;
-    margin: 0 auto;
-}
-
-h1,
-h2 {
+h1 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+}
+
+h2 {
+    margin-right: auto;
+    color: black;
+    text-align: left;
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+
+
 }
 
 nav,
 p,
 section,
 article {
-    margin: 16px;
-    padding: 8px;
+    margin: 10px;
+    padding: 20px;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    bottom: 150px;
 }
 
 .socialmedia a {
+    color: var(--accent2-color);
     text-decoration: none;
+    font-size: 1.2rem;
+    margin: 0 10px;
 }
 
 .hero {
     position: relative;
+
 }
 
 .hero img {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 600px;
+    float: initial;
+
 }
 
-h1 {
+.hero article {
+    position: absolute;
+    bottom: 150px;
+    left: 20px;
+    width: 90%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.hero article p {
+    font-family: var(--body-font);
+    color: var(--primary-color);
+    font-size: 1.0rem;
+
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    height: 100px;
+}
+
+.about p {
+    font-family: var(--body-font);
+    color: black;
+    font-size: 1.1rem;
+}
+
+.hero h1 {
     position: absolute;
     top: 20px;
-    width: 100%;
-    padding: 16px;
+    width: 90%;
+    padding: 20px;
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent2-color);
@@ -80,26 +148,96 @@ h1 {
 }
 
 footer {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
-    text-align: center;
-    padding: 16px;
+    background: var(--primary-color);
+    color: #ffff;
+    text-align: left;
+    width: 100%;
+    box-shadow: 0 -1px 8px rgba(0, 0, 0, 0.08);
 
 }
 
-footer nav {
-    display: flex;
-    justify-content: center;
-    size: 21px;
-}
 
-footer nav a {
-    color: var(--accent2-color);
-    text-decoration: none;
-    margin: 0 8px;
-}
 
 footer img {
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
+    margin: 0 4px;
+    border: 2px solid #264653;
+    border-radius: 4px;
+    background: #fff;
+    vertical-align: middle;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.10);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+footer img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+}
+
+.image {
+    display: flex;
+    gap: 1rem;
+
+    justify-content: center;
+    align-items: right;
+    margin: 2rem 0;
+}
+
+.image img {
+    width: 220px;
+    height: auto;
+    object-fit: cover;
+    border: 3px solid var(--accent1-color);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    margin: 0.5rem;
+    background: #fff;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+.history-section {
+    background: #fff;
+    padding: 24px 16px;
+    margin: 32px auto;
+    max-width: 900px;
+
+}
+
+.history-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 18px;
+    color: var(--primary-color);
+}
+
+.history-columns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.history-text {
+    flex: 1;
+    font-size: 1.05rem;
+    color: #222;
+    line-height: 1.6;
+}
+
+.history-image img {
+    width: 120px;
+    height: 90px;
+    object-fit: cover;
+    background: #264653;
+    border-radius: 8px;
+    border: 2px solid #264653;
+    display: block;
+    margin: auto;
 }
