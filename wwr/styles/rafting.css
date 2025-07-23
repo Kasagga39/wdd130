@@ -177,28 +177,48 @@ footer img:hover {
 
 .image {
     display: flex;
-    gap: 1rem;
-
+    gap: 2rem;
     justify-content: center;
-    align-items: right;
+    align-items: flex-end;
     margin: 2rem 0;
 }
 
+.image figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f8f8f8;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    padding: 12px 8px 8px 8px;
+    margin: 0;
+    min-width: 140px;
+}
+
 .image img {
-    width: 220px;
-    height: auto;
+    width: 120px;
+    height: 90px;
     object-fit: cover;
     border: 3px solid var(--accent1-color);
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    margin: 0.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
     background: #fff;
+    margin-bottom: 8px;
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .image img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+    transform: scale(1.07);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+}
+
+.image figcaption {
+    text-align: center;
+    font-size: 1.08rem;
+    color: #264653;
+    font-weight: 500;
+    margin-top: 4px;
+    letter-spacing: 0.5px;
 }
 
 .history-section {
