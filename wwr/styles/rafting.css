@@ -261,3 +261,66 @@ footer img:hover {
     display: block;
     margin: auto;
 }
+
+@media (max-width: 900px) {
+    .history-section {
+        padding: 16px 4px;
+        max-width: 100%;
+    }
+    .history-columns {
+        flex-direction: column;
+        gap: 18px;
+    }
+    .history-image img {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 700px) {
+    header,
+    main,
+    footer {
+        width: 100%;
+        margin: 0;
+        padding: 0 4px;
+    }
+    .image {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .image figure {
+        min-width: 120px;
+        padding: 8px 4px 4px 4px;
+    }
+    .image img {
+        width: 90px;
+        height: 60px;
+    }
+    h1, h2 {
+        font-size: 1.3rem;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 500px) {
+    .image {
+        flex-direction: column;
+        align-items: center;
+    }
+    .image figure {
+        width: 100%;
+        min-width: 0;
+        margin-bottom: 12px;
+    }
+    .image img {
+        width: 100%;
+        max-width: 220px;
+        height: auto;
+    }
+    .history-section h2 {
+        font-size: 1.1rem;
+    }
+    .history-text {
+        font-size: 0.98rem;
+    }
+}
