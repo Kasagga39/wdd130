@@ -147,33 +147,7 @@ article {
     width: 125px;
 }
 
-footer {
-    background: var(--primary-color);
-    color: #ffff;
-    text-align: left;
-    width: 100%;
-    box-shadow: 0 -1px 8px rgba(0, 0, 0, 0.08);
 
-}
-
-
-
-footer img {
-    width: 32px;
-    height: 32px;
-    margin: 0 4px;
-    border: 2px solid #264653;
-    border-radius: 4px;
-    background: #fff;
-    vertical-align: middle;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.10);
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-footer img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
-}
 
 .image {
     display: flex;
@@ -262,153 +236,7 @@ footer img:hover {
     margin: auto;
 }
 
-@media (max-width: 900px) {
-    .history-section {
-        padding: 16px 4px;
-        max-width: 100%;
-    }
-
-    .history-columns {
-        flex-direction: column;
-        gap: 18px;
-    }
-
-    .history-image img {
-        margin: 0 auto;
-    }
-}
-
-@media (max-width: 700px) {
-
-    header,
-    main,
-    footer {
-        width: 100%;
-        margin: 0;
-        padding: 0 4px;
-    }
-
-    .image {
-        flex-wrap: wrap;
-        gap: 1rem;
-    }
-
-    .image figure {
-        min-width: 120px;
-        padding: 8px 4px 4px 4px;
-    }
-
-    .image img {
-        width: 90px;
-        height: 60px;
-    }
-
-    h1,
-    h2 {
-        font-size: 1.3rem;
-        padding: 8px;
-    }
-}
-
-@media (max-width: 500px) {
-    .image {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .image figure {
-        width: 100%;
-        min-width: 0;
-        margin-bottom: 12px;
-    }
-
-    .image img {
-        width: 100%;
-        max-width: 220px;
-        height: auto;
-    }
-
-    .history-section h2 {
-        font-size: 1.1rem;
-    }
-
-    .history-text {
-        font-size: 0.98rem;
-    }
-}
-
 /* Contact Form Styles */
-:root {
-    --primary-color: #055a05;
-    /* forest green8 */
-    --secondary-color: #f4a261:
-        /* warm sand */
-        --accent1-color: #264653;
-    /* dark slate blue */
-    --accent2-color: #e9c46a;
-    /* light golden yellow */
-    --heading-font: "Merriweather Sans", sans-serif;
-    --body-font: "Lato", sans-serif;
-}
-
-.roboto {
-    font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-    font-variation-settings:
-        "wdth" 100;
-}
-
-header {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
-    position: relative;
-}
-
-header nav {
-    position: absolute;
-    top: 30px;
-    right: 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    padding: 16px 24px 0 0;
-}
-
-header nav a {
-    color: white;
-    background: #264653;
-    border: 2px solid #e9c46a;
-    border-radius: 6px;
-    text-decoration: none;
-    margin: 0 12px;
-    font-size: 1.1rem;
-    padding: 6px 18px;
-    font-weight: 600;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
-    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
-}
-
-header nav a:hover {
-    background: #264653;
-    color: #fff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
-}
-
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'My Font', sans-serif;
-}
-
-nav,
-p,
-section,
 body {
     margin: 10px;
     padding: 20px;
@@ -464,20 +292,6 @@ button[type="send message"]:hover {
     background-color: #0056b3;
 }
 
-.socialmedia {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    bottom: 150px;
-}
-
-.socialmedia a {
-    color: var(--accent2-color);
-    text-decoration: none;
-    font-size: 1.2rem;
-    margin: 0 10px;
-}
-
 footer {
     background: var(--primary-color);
     color: #ffff;
@@ -486,8 +300,6 @@ footer {
     box-shadow: 0 -1px 8px rgba(0, 0, 0, 0.08);
 
 }
-
-
 
 footer img {
     width: 32px;
@@ -504,15 +316,6 @@ footer img {
 footer img:hover {
     transform: scale(1.1);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
-}
-
-main {
-    max-width: 900px;
-    margin: 40px auto 30px auto;
-    padding: 32px 24px;
-    background: #fff;
-    border-radius: 18px;
-    box-shadow: 0 4px 24px rgba(38, 70, 83, 0.08);
 }
 
 .contact-hero {
@@ -626,25 +429,4 @@ main {
     color: #333;
     font-weight: 500;
     line-height: 1.3;
-}
-
-@media (max-width: 800px) {
-    .contact-map-profile {
-        flex-direction: column;
-        gap: 24px;
-    }
-
-    main {
-        padding: 18px 4vw;
-    }
-
-    .map-container,
-    .employee-profiles {
-        max-width: 100%;
-    }
-}
-
-.map-container {
-    width: 100%;
-    height: 300px;
 }
